@@ -4,7 +4,6 @@ const client = new line.Client({
   channelAccessToken: process.env.LINE_CHANNEL_ACCESS_TOKEN
 });
 
-// 送信先（ユーザーID or グループID）
 const TO = process.env.LINE_TO;
 
 async function main() {
