@@ -11,9 +11,9 @@ async function main() {
   await client.pushMessage(TO, {
     type: 'video',
     originalContentUrl:
-      'https://SHIx3N.github.io/hanamibot/sleep.mp4',
+      'https://github.com/SHIx3N/hanamibot/sleep.mp4',
     previewImageUrl:
-      'https://SHIx3N.github.io/hanamibot/sleep.jpg'
+      'https://github.com/SHIx3N/hanamibot/sleep.jpg'
   });
 }
 
