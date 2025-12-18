@@ -1,5 +1,5 @@
 {
-  "name": "hanami-bot",
+  "name": "line-video-bot",
   "version": "1.0.0",
   "dependencies": {
     "@line/bot-sdk": "^9.0.0"
