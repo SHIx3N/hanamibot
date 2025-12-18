@@ -2,7 +2,7 @@ name: Send LINE Video
 
 on:
   schedule:
-    - cron: '45 23 * * *'  # 日本時間 8:00（UTC+9）
+    - cron: '00 23 * * *'  # 日本時間 8:00（UTC+9）
   workflow_dispatch:     # 手動実行用（テストに便利）
 
 jobs:
