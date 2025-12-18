@@ -1,0 +1,23 @@
+name: Send LINE Video
+
+on:
+  schedule:
+    - cron: '0 23 * * *'  # 日本時間 8:00（UTC+9）
+  workflow_dispatch:     # 手動実行用（テストに便利）
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm install
+
+      - run: node sendVideo.js
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_TO: ${{ secrets.LINE_TO }}
