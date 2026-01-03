@@ -2,7 +2,7 @@ name: Send LINE Video
 
 on:
   schedule:
-    - cron: '0 11 * * *'   # UTC 11:00 = 日本時間 20:00
+    - cron: '30 10 * * *'   # UTC 10:30 = JST 19:30
   workflow_dispatch:
 
 jobs:
