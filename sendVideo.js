@@ -20,7 +20,7 @@ async function waitUntil20JST() {
     const jstMin = now.getUTCMinutes();
     const jstSec = now.getUTCSeconds();
 
-    if (jstHour === 21 && jstMin === 1 && jstSec === 30) {
+    if (jstHour === 21 && jstMin === 11 && jstSec === 0) {
       console.log('20:00 JST reached');
       break;
     }
